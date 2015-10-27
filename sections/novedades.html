@@ -1,0 +1,90 @@
+
+<!-- SECCION NOVEDADES -->
+
+<section class="libros row placeholders">
+  
+  <!-- Título de la sección -->
+  <h2 class="sub-header">Novedades</h2>
+
+
+  <!-- Contenedor Novedades-->
+  <div class="container-fluid" id="portfolio">
+    
+
+    <!-- Novedad -->
+    <article class="col-xs-6 col-sm-4 col-md-4 col-lg-3" ng-repeat="libro in novedades">
+      <div class="panel panel-default">
+       <div class="panel-body">
+        <a class="thumbnail" ng-click="muestraNovedad(libro.id)" data-toggle="modal" data-target="#novedad-modal" >
+          <img src="{{libro.src}}" class="img-thumbnail img-responsive" alt=""/>
+        </a>
+        </div>
+        <div class="panel-footer">
+          <div class="caption">
+              <h3 class="pull-right">{{libro.precio}}€</h3>
+              <h3>{{libro.titulo}}</h3>
+          </div>
+          <div class="ratings" >
+              <p>
+                  <span class="valoracion star-{{libro.valoracion}}">&nbsp;</span>
+              </p>
+          </div>
+        </div>
+        
+      </div> 
+    </article> 
+
+  </div>
+
+
+
+  <!-- Ventana Modal Novedad -->
+  <div class="modal fade" id="novedad-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog novedad" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">{{libro.titulo}}</h4>
+        </div>
+        <div class="modal-body">
+
+
+          <div class="container-fluid">
+            <div class="row row-offcanvas row-offcanvas-left">
+
+
+              <!--Thumbnail del libro-->
+              <div class="col-xs-12 col-sm-5">
+                <div class="imagen thumbnail">
+                    <img alt="thumbnail generico" class="img-responsive thubnail" src="{{libro.src}}"/>
+                </div>
+              </div>
+
+              <!--Datos del libro-->
+              <div class="descripcion col-xs-12 col-sm-7">
+                <p class="novedad">Novedad!</p>
+                <div><dt>Autor:</dt><dd>{{libro.autor}}</dd></div>
+                <div><dt>Editorial:</dt><dd>{{libro.editorial}}</dd></div>
+                <div><dt>Tipo:</dt><dd>{{libro.tipo}}</dd></div>
+                <div><dt>Precio:</dt><dd>{{libro.precio}}</dd></div>
+                <div><dt>Vendidos:</dt><dd>{{libro.vendidos}}</dd></div>
+                <div><dt>Paginas:</dt><dd>{{libro.paginas}}</dd></div>
+                <div><dt>Año:</dt><dd>{{libro.ano}}</dd></div>
+              </div>
+
+              <!--Resumen del libro-->
+              <div class="resumen col-xs-12">
+                <p>{{libro.resumen}}</p>
+              </div>
+
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- Fin ventana Modal -->
+
+</section>

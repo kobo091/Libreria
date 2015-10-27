@@ -1,0 +1,389 @@
+/*
+ * Style tweaks
+ */
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+
+/*
+ * Base structure
+ */
+body {
+  padding-top: 50px;
+}
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.navbar-fixed-top {
+  border: 0;
+}
+
+
+
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  max-width: 30%;
+  display: none;
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #f5f5f5;
+  border-right: 1px solid #eee;
+}
+.active .sidebar {
+  display: block;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder
+ */
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h2 {
+  text-align: left;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+section.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.pull-left button{ 
+  margin-top:24px;
+  margin-right:10px;
+}
+
+
+/*
+ * Off Canvas
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .row-offcanvas-right {
+    right: 0;
+  }
+  .row-offcanvas-left {
+    left: 0;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -30%; /* 6 columns */
+  }
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -30%; /* 6 columns */
+  }
+  .row-offcanvas-right.active {
+    right: 30%; /* 6 columns */
+  }
+  .row-offcanvas-left.active {
+    left: 30%; /* 6 columns */
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+
+/*
+ * HEADER
+ */
+  header .container-fluid{
+    margin-top:-9px;
+  }
+ .navbar h1{
+  margin-bottom:0;
+  margin-top:10px;
+ }
+ button.navbar-toggle{
+  margin-top:17px;
+ }
+ ul.navbar-toggle{
+  float:none;
+ }
+
+
+
+/*
+ * LIBROS
+ */
+ .libros .container-fluid {
+  padding-top:10px;
+ }
+ 
+ .libros article h3{
+  font-size: 12px;
+  text-align: left;
+  overflow: hidden;
+  margin-top:0px;
+  margin-bottom:0px;
+  height: 26px;
+ }
+ .libros article div.caption{
+  margin-bottom:5px;
+ }
+ .libros article div.ratings, .libros article div.ratings p {
+  margin-bottom:0px;
+ }
+ .libros article div.panel-body{
+  overflow: hidden;
+  padding: 1.2vw;
+ }
+ .libros article div.panel-footer{
+  overflow: hidden;
+ }
+ .libros article .panel-default {
+ -webkit-box-shadow: 10px 13px 9px -4px rgba(0,0,0,0.45);
+  -moz-box-shadow: 10px 13px 9px -4px rgba(0,0,0,0.45);
+  box-shadow: 10px 13px 9px -4px rgba(0,0,0,0.45);
+}
+ .libros dl{
+  text-align: center
+ } 
+ .libros dt, .libros dd{
+  display:block;
+  float:left;
+ }
+ .libros dt{
+  clear:left;
+ }
+
+ section.libros img.thubnail {
+  border-radius:5%;
+ }
+
+.libros .placeholder {
+  height: 30em;
+  overflow: hidden;
+}
+ .libros .placeholder img{
+height: 19em;}
+
+.libros .descripcion {
+  position:relative;
+}
+table.table tbody tr td.ver-libro{
+  padding-top:3px;
+  padding-bottom:0px;
+}
+
+
+/*
+ * CLIENTES
+ */
+table.table-clickable td{
+  cursor: pointer;
+}
+table.table tbody tr td.ver-cliente{
+  padding-top:3px;
+  padding-bottom:0px;
+} 
+
+/*
+ * MODAL
+ */
+.modal thead tr{
+  border: 1px solid #ddd;
+}
+.modal tbody tr{
+  border: 1px solid #ddd;
+}
+.modal table td{
+  border: none;
+}
+.modal tfoot td{
+  border: none;
+  font-weight: bold;
+}
+.modal .apellidos {
+    margin-left:0.38em;
+}
+.modal p.novedad{
+  font-weight: bold;
+}
+.modal h3.modal-title{
+  font-size: 18px;
+}
+.modal .modal-footer{
+  clear:both;
+}
+.modal .cliente .descripcion{
+  margin-bottom: 10px;
+}
+.modal dt{
+  float:left;
+  margin-right: 5px
+}
+.modal .resumen{
+  font-size: 11px;
+  padding:0;
+}
+.placeholders .modal {
+    text-align: left;
+}
+.modal .imagen{
+  overflow: hidden;
+  max-width:15em;
+}
+.modal .thumbnail img {
+    margin-left: 0;
+}
+.modal .thumbnail{
+  margin-left: 0;
+  padding: 0;
+  border-radius: 0;
+ -webkit-box-shadow: 10px 13px 9px -4px rgba(0,0,0,0.45);
+  -moz-box-shadow: 10px 13px 9px -4px rgba(0,0,0,0.45);
+  box-shadow: 10px 13px 9px -4px rgba(0,0,0,0.45);
+}
+
+section.libros .modal img.thubnail {
+    border-radius: 0;
+}
+/*
+ * FOOTER
+ */
+footer.footer{
+  padding-top:0px;
+}
+footer.footer p{
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+  margin-top:20px;
+  padding-top:10px;
+  padding-bottom:12px;
+}
+
+/*
+ * THUMBNAILS
+ */
+#portfolio .row{
+  margin:50px;
+}
+#portfolio .img-thumbnail{
+  border:150px;
+  border-radius:4px;
+  margin:0px;
+  padding:0px;
+ 
+}
+#portfolio a{
+  cursor:pointer;
+}
+#portfolio a.thumbnail{
+  padding:0;
+  margin:0;
+}
+
+
+/*
+ * Valoracion
+ */
+.valoracion {
+    background: rgba(0, 0, 0, 0) url("../img/stars.png") no-repeat scroll 0 -100px;
+    display: block;
+    height: 16px;
+    margin-right: 5px;
+    text-indent: -9999px;
+    width: 75px;
+}
+.star-5 {
+    background-position: 0 0;
+}
+.star-4 {
+    background-position: 0 -20px;
+}
+.star-3 {
+    background-position: 0 -40px;
+}
+.star-2 {
+    background-position: 0 -60px;
+}
+.star-1 {
+    background-position: 0 -80px;
+}

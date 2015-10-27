@@ -1,0 +1,213 @@
+{
+"libros": [
+  {
+    "novedad" : true,
+    "id" : "L001",
+    "titulo" : "Yo fui a EGB 2",
+    "idioma" : "castellano",
+    "isbn" : "9788401343025",
+    "autor" : "Jorge Díaz",
+    "editorial" : "Plaza & Janes",
+    "tipo" : "Comedia",
+    "encuadernacion" : "Tapa dura",
+    "precio" : 18.90,
+    "paginas" : 205,
+    "vendidos" : 4,
+    "ano" : 2015,
+    "src" : "./img/L001.jpg",
+    "thubnail" : "./img/L001_tn.jpg",
+    "compras" : [
+        {
+            "id" : 1,
+            "nombre" : "Alfredo",
+            "apellidos" : "García García"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Juan Andrés",
+            "apellidos" : "García Pérez"
+        }
+    ],
+    "resumen" : "Un nuevo volumen del fenómeno de internet que arrasa en redes sociales y librerías. Más nostalgia, más recuerdos, más ilustraciones, más sorpresas en la segunda parte del libro de no ficción más vendido del momento. Incluye adhesivos y el juego de mesa exclusivo YO FUI A EGB De la colonia Chispas a Arconada, del betam ax al Spectrum, del bote de Pralin al primo de Zumosol, de AC/DC a Hombres G, del conejito de Duracell a Mr. Proper, de Candy Candy al Un dos tres... ¿a qué esperas para volver a clase?"
+  },
+  {
+    "novedad" : false,
+    "id" : "L002",
+    "titulo" : "La violencia y sus claves",
+    "idioma" : "castellano",
+    "isbn" : "9788434407220",
+    "autor" : "Jose Sanmartín",
+    "editorial" : "Ariel",
+    "tipo" : "Novela",
+    "encuadernacion" : "Cuaderno",
+    "precio" :  14.96,
+    "valoracion" : 4,
+    "vendidos" : 2,
+    "paginas" : 152,
+    "ano" : 2009,
+    "src" : "./img/L002.jpg",
+    "thubnail" : "./img/L002_tn.jpg",
+    "compras" : [
+        {
+            "id" : 5,
+            "nombre" : "Jaime",
+            "apellidos" : "Gustavo Ortiz"
+        }
+    ],
+    "resumen" : "Se habla mucho de la violencia pero se sabe muy poco acerca de sus causas. Los científicos suelen dividirse entre quienes ven fundamentalmente factores biológicos tras ella, o quienes conceden mayor importancia a los factores sociales. Este libro no se inclina ni hacia unos ni hacia otros, partiendo de la distinción entre a gresividad y violencia, se muestra que la primera es instintiva, mientras que la violencia es el resultado que se sigue en algunos casos cuando determinados factores culturales inciden sobre la agresividad."
+  },
+  {
+    "novedad" : true,
+    "id" : "L003",
+    "titulo" : "Todos deberíamos ser feministas",
+    "idioma" : "Castellano",
+    "isbn" : "9788439730484",
+    "autor" : "Chimanda Ngozi Adichie",
+    "editorial" : "Literatura Random House",
+    "tipo" : "Novela",
+    "encuadernacion" : "Tapa blanda",
+    "precio" :  4.90,
+    "valoracion" : 4,
+    "vendidos" : 3,
+    "paginas" : 64,
+    "ano" : 2015,
+    "src" : "./img/L003.jpg",
+    "thubnail" : "./img/L003_tn.jpg",
+    "compras" : [
+        {
+            "id" : 1,
+            "nombre" : "Alfredo",
+            "apellidos" : "García García"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Juan Andrés",
+            "apellidos" : "García Pérez"
+        }
+    ],
+    "resumen" : "Un libro que recoge el trascendental y emblemático discurso que dio la autora en su TEDx Talk sobre lo que significa ser feminista en el siglo XXI. Ser feminista no es solo cosa de mujeres. Chimamanda Ngozi Adichie lo demuestra en este elocuente y perspicaz texto, en el que nos brinda una definición singular de lo que si gnifica ser feminista en el siglo XXI."
+  },
+  {
+    "novedad" : true,
+    "id" : "L004",
+    "titulo" : "El bienestar desigual",
+    "idioma" : "Castellano",
+    "isbn" : "9788499424361",
+    "autor" : "Guillem Lopez Casasnovas",
+    "editorial" : "Península",
+    "precio" : 17.90,
+    "valoracion" : 1,
+    "vendidos" : 0,
+    "paginas" : 352,
+    "ano" : 2015,
+    "src" : "./img/L004.jpg",
+    "thubnail" : "./img/L004_tn.jpg",
+    "compras" : [
+        {
+            "id" : 2,
+            "nombre" : "María",
+            "apellidos" : "Lucas Sánchez"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Juan Andrés",
+            "apellidos" : "García Pérez"
+        }
+    ],
+    "resumen" : "Ha llegado el momento de dejar de lado el «todo va mal», para poner en valor lo alcanzado y los evidentes ámbitos de mejora. A ello se aplica Guillem López Casasnovas -uno de los máximos expertos en gasto social de este país- en este libro, auténtica hoja de ruta hacia un bienestar menos estatalizado, mejor gestionado, en el que la política intervenga solo para lograr grandes consensos y la tecnología supere las inercias de la burocracia, y, sobre todo, en el que la responsabilidad individual lleve al reconocimiento adulto de que nada en la vida sale gratis."
+  },
+  {
+    "novedad" : true,
+    "id" : "L005",
+    "titulo" : "Astérix: El papiro del César",
+    "idioma" : "Castellano",
+    "isbn" : "9788469604687",
+    "autor" : "Rene Goscinny",
+    "editorial" : "Bruño",
+    "tipo" : "Cómic",
+    "encuadernacion" : "Tapa dura",
+    "precio" : 12.25,
+    "valoracion" : 2,
+    "vendidos" : 14,
+    "paginas" : 48,
+    "ano" : 2015,
+    "src" : "./img/L005.jpg",
+    "thubnail" : "./img/L005_tn.jpg",
+    "compras" : [
+        {
+            "id" : 1,
+            "nombre" : "Alfredo",
+            "apellidos" : "García García"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Juan Andrés",
+            "apellidos" : "García Pérez"
+        }
+    ],
+    "resumen" : "Llega el nuevo álbum de la colección clásica de Astérix con los personajes de siempre y muchos nuevos"
+  },
+  {
+    "novedad" : true,
+    "id" : "L006",
+    "titulo" : "A mi manera: las recetas",
+    "idioma" : "Castellano",
+    "isbn" : "9788408147473",
+    "autor" : "Karlos Arguiñano",
+    "editorial" : "Planeta",
+    "tipo" : "Cocina",
+    "encuadernacion" : "Tapa dura",
+    "precio" : 22.90,
+    "valoracion" : 5,
+    "vendidos" : 36,
+    "paginas" : 464,
+    "ano" : 2014,
+    "src" : "./img/L006.jpg",
+    "thubnail" : "./img/L006_tn.jpg",
+    "compras" : [
+        {
+            "id" : 1,
+            "nombre" : "Alfredo",
+            "apellidos" : "García García"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Juan Andrés",
+            "apellidos" : "García Pérez"
+        }
+    ],
+    "resumen" : "Las recetas fundamentales de la cocina regional española con el toque inconfundible y personal del maestro de los fogones de la televisión, Karlos Arguiñano. ¿Sabes preparar la mejor tortilla de patatas? ¿Y el mejor salmorejo? ¿Y las mejores kokotxas de bacalao? ¿Y la mejor caldereta? Karlos Arguiñano, el cocinero más popular de la televisión, nos descubre en este nuevo libro todos los secretos para preparar, a su manera, los mejores platos de la gastronomía regional española."
+  },
+  {
+    "novedad" : false,
+    "id" : "L007",
+    "titulo" : "El monje",
+    "idioma" : "es",
+    "isbn" : "9788477026853",
+    "autor" : "Matthew Lewis",
+    "editorial" : "Valdemar",
+    "tipo" : "Novela",
+    "encuadernacion" : "Bolsillop",
+    "precio" : 14.70,
+    "valoracion" : 4,
+    "vendidos" : 39,
+    "paginas" : 504,
+    "ano" : 2011,
+    "src" : "./img/L007.jpg",
+    "thubnail" : "./img/L007_tn.jpg",
+    "compras" : [
+        {
+            "id" : 5,
+            "nombre" : "Jaime",
+            "apellidos" : "Gustavo Ortiz"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Juan Andrés",
+            "apellidos" : "García Pérez"
+        }
+    ],
+    "resumen" : "El Monje, de Matthew G. Lewis, libro terrible y una de las cimas de la novela gótica, vio la luz en marzo de 1796, y despertó inmediatamente el interés y el asombro de la crítica y el público. Hoy, doscientos años más tarde, el poder hipnótico de su prosa y el veneno moral que destilan sus páginas sigue despertando el asomb ro de las generaciones de lectores que gustan del terror clásico."
+  }
+]
+}

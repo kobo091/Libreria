@@ -1,0 +1,96 @@
+
+<!-- SECCION CLIENTES -->
+
+<section class="clientes">
+
+    <!-- Título de la sección -->
+  <h2 class="sub-header">Clientes</h2>
+
+    <!-- Tabla de clientes-->
+  <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Ciudad</th>
+          <th>Teléfono</th>
+          <th>eMail</th>
+          <th>Compras</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="cliente in clientes">
+          <td class="ver-cliente">
+            <!-- Botón que muestra los datos del cliente en ventana modal -->
+            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#cliente-modal" ng-click="muestraCliente(cliente.id)">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </td>
+          <td>{{cliente.nombre}}</td>
+          <td>{{cliente.apellidos}}</td>
+          <td>{{cliente.ciudad}}</td>
+          <td>{{cliente.telefono}}</td>
+          <td>{{cliente.mail}}</td>
+          <td>{{cliente.compras.length}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- Ventana Modal Cliente-->
+  <div class="modal fade" id="cliente-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog cliente" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myModalLabel"><span class="nombre">{{cliente.nombre}}</span><span class="apellidos">{{cliente.apellidos}}</span></h3>
+        </div>
+
+        <div class="modal-body">
+
+          <!--Datos del cliente-->
+          <div class="descripcion col-md-4">
+            <div><dt>Ciudad:</dt><dd>{{cliente.ciudad}}</dd></div>
+            <div><dt>Teléfono:</dt><dd>{{cliente.telefono}}</dd></div>
+            <div><dt>Mail:</dt><dd>{{cliente.mail}}</dd></div>
+          </div>
+
+          <!--Tabla de libros comprados por el cliente-->
+          <div class="compras col-md-8">
+            <table class="table">
+              <thead><tr>
+                <th>Compras del cliente</th>
+                <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody ng-init="total = 0">
+                <tr ng-init="$parent.total = $parent.total + libro.precio" ng-repeat="libro in cliente.compras">
+                  <td>{{libro.titulo}}</td>
+                  <td>{{libro.precio}}€</td>
+                </tr>
+              </tbody>
+              <!--Mostramos el total sólo cuando hay varias compras-->
+              <tfoot ng-if="cliente.compras.length>1">
+                <tr>
+                  <td>Total</td>
+                  <td>{{total}}€</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div><!--Ends Ventana Modal-->
+
+
+</section>

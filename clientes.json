@@ -1,0 +1,104 @@
+{
+"clientes": [
+  {
+    "id" : 1,
+    "nombre" : "Alfredo",
+    "apellidos" : "García García",
+    "ciudad" : "Salamanca",
+    "telefono" : "648920453",
+    "mail" : "agar@mail.com",
+    "pais" : "Espa&ntilde;a",
+    "compras" : [
+        {
+            "id" : "L001",
+            "titulo" : "Yo fui a EGB 2",
+            "precio" : 18.90
+        },
+        {
+            "id" : "L003",
+            "titulo" : "Todos deberíamos ser feministas",
+            "precio" : 4.90
+        },
+        {
+            "id" : "L005",
+            "titulo" : "Astérix: El papiro del César",
+            "precio" : 12.25
+        }
+    ]
+  },
+  {
+    "id" : 2,
+    "nombre" : "María",
+    "apellidos" : "Lucas Sánchez",
+    "ciudad" : "Pamplona",
+    "telefono" : "635757245",
+    "mail" : "mlucas@mail.com",
+    "pais" : "Espa&ntilde;a",
+    "compras" : [
+        {
+            "id" : "L004",
+            "titulo" : "El bienestar desigual",
+            "precio" : 17.90
+        }
+    ]
+  },
+  {
+    "id" : 3,
+    "nombre" : "Ana",
+    "apellidos" : "Gutierrez González",
+    "ciudad" : "Madrid",
+    "telefono" : "683948692",
+    "mail" : "aguti@mail.com",
+    "pais" : "Espa&ntilde;a",
+    "compras" : [
+        {
+            "id" : "L002",
+            "titulo" : "La violencia y sus claves",
+            "precio" : 14.96
+        }
+    ]
+  },
+  {
+    "id" : 4,
+    "nombre" : "Juan Andrés",
+    "apellidos" : "García Pérez",
+    "ciudad" : "Sevilla",
+    "telefono" : "654538459",
+    "mail" : "juanand4@mail.com",
+    "pais" : "Espa&ntilde;a",
+    "compras" : [
+        {
+            "id" : "L001",
+            "titulo" : "Yo fui a EGB 2",
+            "precio" : 18.90
+        },
+        {
+            "id" : "L003",
+            "titulo" : "Todos deberíamos ser feministas",
+            "precio" : 4.92
+        }
+    ]
+  },
+  {
+    "id" : 5,
+    "nombre" : "Jaime",
+    "apellidos" : "Gustavo Ortiz",
+    "ciudad" : "Murcia",
+    "telefono" : "744920484",
+    "mail" : "jjiimi@mail.com",
+    "pais" : "Espa&ntilde;a",
+    "compras" : [
+        {
+            "id" : "L002",
+            "titulo" : "La violencia y sus claves",
+            "precio" : 14.96
+        },
+        {
+            "id" : "L007",
+            "titulo" : "El monje",
+            "precio" : 14.70
+        }
+    ]
+  }
+]
+}
